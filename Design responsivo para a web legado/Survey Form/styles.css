@@ -1,66 +1,110 @@
 @charset "UTF-8";
 
 body, html {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
     margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(130, 102, 255);
 }
 
-/* Required for Certificate */
-img {
-    display: block;
-}
-#image {
-    max-width: 100%;
-    height: auto; 
-}
-#img-div {
-    margin: 0 auto
-}
-
-/* optional settings */
-
-#main, body {
-    background-color: rgb(211, 211, 211);
-}
 
 #title {
-    font-size: 2.4em;
-    font-weight: bold;
+    font-size: .8em;
+    margin: 1em 1em 0em;
+}
+#description {
+    font-size: .7em;
+    margin: 0 1em 2em;
 }
 
-#img-div {
-    width: 95%;
 
-    background-color: white;
-    
+#survey-form {
+    margin: 1em auto 2em;
+    width: 80%;
+    padding: .2em;
+    background-color: rgba(0, 0, 0, 0.384);
+    border-radius: 1em;
+}
+
+#infos {
+    margin: 2em auto;
+    width: 50%;
+}
+.label {
+    display: block;
+    margin: .5em;
+}
+.label input {
+    width: 12em;
+    margin-left: 1em;
+    padding: .2em;
+}
+#number-label{
+    margin-left: .7em;
+}
+
+
+#dropdown {
+    display: block;
+    width: 70%;
+    padding: 1em;
+    margin: 2em auto;
+    margin-bottom: 1.5em;
+}
+
+#place {
+    width: 70%;
+    margin: 2em auto;
+}
+#place .radius {
+    display: block;
+    margin: .6em;
+}
+
+#temp {
+    display: block;
+    margin: 2em auto;
+    width: 70%;
+}
+#temp ul {
+    display: flex;
+    margin: .5em;
+    margin-left: -2.4em;
+    list-style: none;
+}
+#temp li {
+    margin-left: .5em;
+}
+
+#coment {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1.3em;
+}
+#area {
+    display: block;
+    padding: .8em;
+    border-radius: 1em;
     border: 1px solid black;
 }
-#image {
-    width: 90%;
-    margin: 1.5em auto;
-}
-#img-caption{
-    margin-bottom: 1em;
-}
 
-article {
-    margin: 4em 0;
-    font-size: 1.2em;
-}
-article h2 {
-    font-size: 1.2em;
-}
-
-h3 {
-    font-size: 1.3em;
-    line-height: 1.4em;
+#submit{
+    margin: 1em 2em;
+    padding: .5em 1em;
+    border-radius: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.418);
 }
 
 footer {
-    background-color: white;
-    padding: .3em;
-    margin-top: 3em;
-    font-size: 1.3em;
-    font-weight: bold;
+    position: fixed;
+    
+    bottom: 10px;
+    right: 10px;
+
+    font-size: .6em;
 }

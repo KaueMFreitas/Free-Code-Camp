@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+
+    <p id="description">Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form id="survey-form">
+
+        <div id="infos">
+            <label class="label" id="name-label"> Nome:
+                <input type="text" id="name" placeholder="Seu nome" required>
+            </label>
+            <label class="label" id="number-label"> Idade:
+                <input type="number" id="number" placeholder="Sua senha"
+                min="16" max="110" required>
+            </label>
+            <label class="label" id="email-label"> E-mail:
+                <input type="email" id="email" placeholder="Seu email" required>
+            </label>
+        </div>
+
+        <select name="escolha" id="dropdown">
+            <option value="0">Escolha uma aréa</option>
+            <option value="0">Front-end</option>
+            <option value="0">back-end</option>
+            <option value="0">Mobile</option>
+        </select>
+
+        <div id="place"> De onde você é
+            <label class="radius">   
+            <input type="radio" name="opcoes" id="name-radio" value="name-tes"> Brasil
+            </label>
+
+            <label class="radius">   
+            <input type="radio" name="opcoes" id="name-radio" value="name-tes"> Exterior
+            </label>
+
+            <label class="radius">   
+            <input type="radio" name="opcoes" id="name-radio" value="name-tes"> Nao falar
+            </label>
+        </div>
+
+        <div id="temp"> Passa tempo
+            <ul>
+                <li>
+                    <label>
+                        <input type="checkbox" class="survey-form" value="0"> jogar
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="survey-form" value="0"> trabalhar
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <input type="checkbox" class="survey-form" value="0"> nada
+                    </label>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="coment"> 
+            <label>Comentarios:
+                <textarea id="area" cols="30" rows="5"></textarea>
+            </label>
+        </div>
+
+        <input type="submit" id="submit" value="enviar">
+
+    </form>
+    <footer> Is not responsive </footer>
+</body>
+</html>
