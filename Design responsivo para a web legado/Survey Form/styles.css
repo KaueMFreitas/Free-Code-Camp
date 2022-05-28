@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+body, html {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 0;
+}
+
+/* Required for Certificate */
+img {
+    display: block;
+}
+#image {
+    max-width: 100%;
+    height: auto; 
+}
+#img-div {
+    margin: 0 auto
+}
+
+/* optional settings */
+
+#main, body {
+    background-color: rgb(211, 211, 211);
+}
+
+#title {
+    font-size: 2.4em;
+    font-weight: bold;
+}
+
+#img-div {
+    width: 95%;
+
+    background-color: white;
+    
+    border: 1px solid black;
+}
+#image {
+    width: 90%;
+    margin: 1.5em auto;
+}
+#img-caption{
+    margin-bottom: 1em;
+}
+
+article {
+    margin: 4em 0;
+    font-size: 1.2em;
+}
+article h2 {
+    font-size: 1.2em;
+}
+
+h3 {
+    font-size: 1.3em;
+    line-height: 1.4em;
+}
+
+footer {
+    background-color: white;
+    padding: .3em;
+    margin-top: 3em;
+    font-size: 1.3em;
+    font-weight: bold;
+}
