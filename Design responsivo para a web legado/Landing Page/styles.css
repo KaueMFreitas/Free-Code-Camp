@@ -1,32 +1,36 @@
 @charset "UTF-8";
 :root {
-    --fundo: rgb(228, 228, 228);
+    --fundo: rgb(236, 236, 236);
+    --fundo2: rgb(206, 206, 206);
+    --laranja: rgb(255, 178, 36);
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 98.7vw;
     background-color: var(--fundo);
 }
 
+/* navegação */
 #nav-bar{
     background-color: var(--fundo);
     display: flex;
     position: fixed;
     top: 0;
-    width: calc(100vw - 6rem);
+    width: 100vw;
     justify-content: space-between;
-    margin: 1rem 3rem;
+    padding: .6rem 0;
 }
 img {
-    width: 18rem;
+    width: 25rem;
 }
 #nav-bar ul {
     display: flex;
     float: right;
     list-style: none;
-    gap: 4rem;
+    gap: 5rem;
+    margin-right: 3rem;
 }
 #nav-bar a {
     color: black;
@@ -34,44 +38,134 @@ img {
     font-size: 1.5rem;
 }
 
+/* Area principal */
+main {
+    margin-top: 8rem;
+}
 
+/* padroes */
+.divs {
+    margin-top: 6rem;
+}
+
+/* formulario */
 form {
-    margin: 3rem auto;
+    margin: 0 auto;
     width: 55vw;
 }
-form p {
+form h1 {
     margin: 1rem auto;
-    font-size: 3rem;
+    width: 31rem;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
 }
 form #email {
     display: block;
+    margin: 2rem auto 1rem;
     width: 30vw;
+    height: .6rem;
     padding: .8rem;
-    margin: 2rem 10vw 1rem;
-    border-radius: 15px;
     border: 1px solid black;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 form #submit {
-    background-color: yellow;
-    border: 1px solid black;
-    border-radius: 15px;
-    width: 12vw;
-    margin: 2rem 20vw;
+    display: block;
+    background-color: var(--laranja);
+    letter-spacing: .3rem;
+    font-weight: bold;
+    border: none;
+    width: 13vw;
+    height: 2.5rem;
+    margin: 2rem auto;
     padding: 1rem .1rem;
+    font-size: 1rem;
+}
+
+/* segunda area */
+.padrao {
+    margin: 0 auto;
+    width: 55rem;
+    display: flex;
+    gap: 2.5rem;
+    height: auto;
+}
+.padrao .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.4rem;
+    color: var(--laranja);
+}
+.text-st {
+    margin-bottom: 1rem;
+}
+.text-st h2 {
+    font-size: 1.6rem;
+}
+.text-st p {
+    font-size: 1.15rem;
+}
+
+/* video */
+#videos {
+    width: 35vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* compra */
+
+#price {
+    display: flex;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 6rem;
+}
+.prices {
+    border: 1px solid black;
+    text-align: center;
+    width: 30rem;
+}
+.prices h3 {
+    margin: 0;
+    background-color: var(--fundo2);
+    padding: 1rem 2rem;
+}
+.prices h4 {
+    font-size: 2rem;
+}
+.prices p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+.prices input {
+    background-color: var(--laranja);
+    border: none;
+    font-weight: normal;
     font-size: 1.5rem;
+    letter-spacing: .3rem;
+    margin-bottom: 1rem;
+    width: 10vw;
+    height: 3rem;
 }
 
 
-main {
-    margin-top: 10rem;
+/* footer */
+footer {
+    text-align: center;
+    background-color: var(--fundo2);
+}
+footer p {
+    margin: 0;
+    padding: .6rem;
 }
 
 @media (max-width: 600px)
 {
 
     #nav-bar{
-        background-color: aqua;
+        background-color: var(--fundo);
     }
 
 }
